@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Main</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body class="home">
+    <header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-1">
+					<div class="logo">
+						<img src="images/dots.svg" alt="logo" class="logo__dots">
+					</div>
+				</div>
+				<div class="col-md-9 offset-1">
+					<nav class="menu">
+						<ul class="menu__list d-flex">
+							<li class="menu__list-item">
+								<a class="homeLink" href="#">Home</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="drinksLink" href="#tabs">Drinks</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="aboutLink" href="about.html">About</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="contactLink" href="contact.html">Contact</a>
+							</li>
+                            <li class="menu__list-item">
+                                <a class="contactLink basket__menu" href="basket.html"><img src="images/shopping-basket 1.svg" alt=""> <p class="basket__num">1</p></a>
+                                                  
+                            </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="row">
+				<div class="offset-11 col-md-1">
+					<div class="socicons">
+						<ul class="socicons__links">
+							<li class="socicons__links-item socicons__links-item_fb">
+							<a href="https://www.facebook.com/watch" target="blank"><img src="images/FB.png" alt="facebook"></a>	
+							</li>
+							<li class="socicons__links-item socicons__links-item_tw">
+							<a href="https://blog.twitter.com" target="blank"><img src="images/TW.png" alt="facebook"></a>	
+							</li>
+							<li class="socicons__links-item socicons__links-item_ig">
+							<a href="https://www.instagram.com/topics/food-and-drink/" target="blank"><img src="images/IG 4.png" alt="facebook"></a>	
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="search d-flex align-items-start flex-column">
+						<h1 class="search__enjoy">
+							Enjoy!
+						</h1>
+						<p class="search__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris arcu aenean in mauris elementum sed non. In sapien enim</p>
+						<form action="#" class="search__form">
+							<input type="text" class="search__input" placeholder="Search your drink">
+							<button type="button" class="search__button">
+								<img src="images/Group 6.svg" alt="search" class="search__img">
+							</button>
+						</form>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-9 offset-3">
+					<div class="special d-flex justify-content-end">
+						<div class="special__green square">
+                            <div class="special__green_content">
+							 <div class="special__green_text">
+							  <p>Blueberry<br>
+                               Special</p>
+							  <p>Calories: 20 kcal<br>
+                               Size: 10 oz</p>
+							 </div>
+							 <div class="special__green_price">
+							  <p>20%</p>
+							  <p>$12</p>
+							 </div>
+                            </div>
+			            </div>
+						<div class="special__orange square">
+							<div class="special__orange_content">
+                             <div class="special__orange_text">
+                              <p>Blueberry<br>
+                               Special</p>
+                              <p>Calories: 20 kcal<br>
+                               Size: 10 oz</p>
+                             </div>
+                             <div class="special__orange_price">
+                              <p>20%</p>
+                              <p>$12</p>
+                             </div>
+                            </div>
+						</div>
+						<div class="special__violet square">
+                            <div class="special__violet_content">
+                             <div class="special__violet_text">
+                              <p>Blueberry<br>
+                               Special</p>
+                              <p>Calories: 20 kcal<br>
+                               Size: 10 oz</p>
+                             </div>
+                             <div class="special__violet_price">
+                              <p>20%</p>
+                              <p>$12</p>
+                             </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="tabs">
+        <div class="menu">
+         <ul class="nav nav-pills choice__menu mb-3" id="pills-tab" role="tablist">
+         <li class="nav-item choice__list" role="presentation">
+           <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All</a> 
+         </li>
+         <li class="nav-item choice__list" role="presentation">
+           <a class="nav-link" id="pills-popular-tab" data-toggle="pill" href="#pills-popular" role="tab" aria-controls="pills-popular" aria-selected="false">Popular Drinks</a>
+         </li>
+         <li class="nav-item choice__list" role="presentation">
+           <a class="nav-link" id="pills-natural-tab" data-toggle="pill" href="#pills-natural" role="tab" aria-controls="pills-natural" aria-selected="false">Natural Smoothies</a>
+         </li>
+         <li class="nav-item choice__list" role="presentation">
+           <a class="nav-link" id="pills-juice-tab" data-toggle="pill" href="#pills-juice" role="tab" aria-controls="pills-juice" aria-selected="false">Juices</a>
+         </li>
+         <li class="nav-item choice__list" role="presentation">
+           <a class="nav-link" id="pills-yogurt-tab" data-toggle="pill" href="#pills-yogurt" role="tab" aria-controls="pills-yogurt" aria-selected="false">Yogurt</a>
+         </li>
+         </ul>
+        </div>
+
+<!--общая-->
+
+    <div class="tab-content" id="pills-tabContent">
+
+
+<!--,блок1-->
+    <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1 pl-0">
+                    <h1 class="name">All</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;" id="a1">
+                         <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/drink1.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;" id="a2">
+                        <button type="button" class="card__body-icon-like">             
+                         </button>
+                         <img src="images/drink2.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                     <div class="card" style="width: auto;" id="a3">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/drink3.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>      
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;" id="a4">
+                         <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/drink4.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                        
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;" id="a5">
+                         <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/drink4.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                        
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;" id="a6">
+                         <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/yohurt1.png"  class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                        
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;" id="a7">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/yohurt2.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;" id="a8">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/yohurt3.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;" id="a9">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/yohurt4.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;" id="a10">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/juice4.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;" id="a11">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/juice2.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;" id="a12">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/juice3.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;" id="a13">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/juice1.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;" id="a14">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/juice2.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;" id="a15">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/juice4.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </div>
+<!--,конец блок1-->
+
+
+
+
+<!--,блок2-->
+    <div class="tab-pane fade" id="pills-popular" role="tabpanel" aria-labelledby="pills-popular-tab">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1 pl-0">
+                    <h1 class="name">Popular Drinks</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/drink1.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/drink2.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                     <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/drink3.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>      
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/drink4.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                         <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/drink4.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                        
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/yohurt1.png"  class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/yohurt2.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                         <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/yohurt3.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                        
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/yohurt4.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/juice4.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/juice2.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/juice3.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/juice1.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                         <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/juice2.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                        
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/juice4.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+            </div>
+        </div>  
+    </div>
+<!--,конец блок2-->
+
+
+
+<!--,блок3-->
+    <div class="tab-pane fade" id="pills-natural" role="tabpanel" aria-labelledby="pills-natural-tab">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1 pl-0">
+                    <h1 class="name">Natural Smoothies</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/drink1.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                                                  
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/drink2.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                         <button type="button" class="card__body-icon-like"></button>
+                        <img src="images/drink3.png" class="card__img" alt="...">
+                     <div class="card__body">
+                         <h3 class="card__body-name">Stranberry and blue</h3>
+                         <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                       <div class="row">
+                         <p class="card__body-price col-8" >$15.00 us</p>
+                         <button type="button" class="card__body-icon-basket col-3 ">
+                         <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                       </div>   
+                     </div>
+                        
+                    </div>      
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/drink4.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                         <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/drink4.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                        
+                    </div>     
+                </div>
+            </div>
+        </div>  
+    </div> 
+
+<!--,конец блок3-->
+
+
+
+<!--,блок4-->
+    <div class="tab-pane fade" id="pills-juice" role="tabpanel" aria-labelledby="pills-juice-tab">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1 pl-0">
+                    <h1 class="name">Juices</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                         <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/juice4.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                        
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                         <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/juice2.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                        
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                         <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/juice3.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                        
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/juice1.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/juice2.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                            </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/juice4.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                            </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </div> 
+<!--,конец блок4-->
+
+
+
+<!--,блок5-->
+    <div class="tab-pane fade" id="pills-yogurt" role="tabpanel" aria-labelledby="pills-yogurt-tab">
+         <div class="container">
+            <div class="row">
+                <div class="col-md-1 pl-0">
+                    <h1 class="name">Yogurt</h1>
+                </div>
+            </div>
+            <div class="row">
+                 <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/yohurt1.png"  class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/yohurt2.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                         <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/yohurt3.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                        
+                    </div>     
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card" style="width: auto;">
+                        <button type="button" class="card__body-icon-like"></button>
+                         <img src="images/yohurt4.png" class="card__img" alt="...">
+                         <div class="card__body">
+                            <h3 class="card__body-name">Stranberry and blue</h3>
+                            <p class="card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                            <div class="row">
+                            <p class="card__body-price col-8" >$15.00 us</p>
+                            <button type="button" class="card__body-icon-basket col-3 ">
+                           <a><img src="images/shopping-basket 1.svg" width="30" alt="" class="card__body-icons-basket"></a> 
+                         </button> 
+                         </div> 
+                         </div>
+                         
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </div>
+<!--,конец блок5-->
+
+    </div>
+ <!-- Конец общая-->   
+</section>                             
+
+    <footer>
+    	<div class="container-fluid">
+    		<div class="row">
+                <div class="col-md-2 foot">
+                   <div class="footer-menu footer">
+                       <ul class="footer-menu__list">
+                           <li class="footer-menu__list_item">Enjoy!</li>
+                           <li class="footer-menu__list_item"><a href="#">Home</a></li>
+                           <li class="footer-menu__list_item"><a href="#tabs">Drinks</a></li>
+                           <li class="footer-menu__list_item"><a href="about.html">About</a></li>
+                           <li class="footer-menu__list_item"><a href="#">Contact</a></li>
+                           <li class="footer-menu__list_item"><a href="basket.html">Basket</a></li>
+                       </ul>
+                   </div>
+                </div> 
+                <div class="col-md-1 foot">
+                    <div class="socicons-footer footer">
+                        <ul class="socicons-footer__links">
+                            <li class="socicons-footer__links-item socicons-footer__links-item_fb">
+                            <a href="#" target="blank"><img src="images/FB.png" alt="facebook"></a> 
+                            </li>
+                            <li class="socicons-footer__links-item socicons-footer__links-item_tw">
+                            <a href="#" target="blank"><img src="images/TW.png" alt="facebook"></a> 
+                            </li>
+                            <li class="socicons-footer__links-item socicons-footer__links-item_ig">
+                            <a href="#" target="blank"><img src="images/IG 4.png" alt="facebook"></a>   
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+                <div class="col-md-3 foot">
+                    <div class="footer-name footer">  
+                    <div class="footer-name__text">
+                        <h1>Enjoy!</h1>
+                    </div>
+                    </div>  
+                </div>
+                <div class="col-md-3 foot">
+                    <!--Google map-->
+<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 150px">
+  <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+    style="border:0" allowfullscreen></iframe>
+</div>
+
+<!--Google Maps-->
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-info footer">
+                        <p>webup@ukr.net</p>
+                        <p>+38(098)428-44-83</p>
+                        <p class="cop">Copyright 2020-2021 &#169;</p>
+                    </div>
+                </div>   
+            </div>
+    	</div>
+    </footer>
+
+
+    <div id="totop"><img src="images/up-upload.svg" alt=""></div>
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
