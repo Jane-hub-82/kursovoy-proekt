@@ -7,39 +7,50 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-<body>
-	<header class="header__basket">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-1">
-					<div class="logo">
-						<img src="images/dots.svg" alt="logo" class="logo__dots">
-					</div>
-				</div>
-				<div class="col-md-9">
-					<nav class="menu">
-						<ul class="menu__list menu__list_all d-flex">
-							<li class="menu__list-item">
-								<a class="homeLink bm" href="index.html">Home</a>
-							</li>
-							<li class="menu__list-item">
-								<a class="drinksLink bm" href="index.html#tabs">Drinks</a>
-							</li>
-							<li class="menu__list-item">
-								<a class="aboutLink bm" href="about.html">About</a>
-							</li>
-							<li class="menu__list-item">
-								<a class="contactLink bm" href="contact.html">Contact</a>
-							</li>
-							<li class="menu__list-item">
-                                <a class="contactLink basket__menu" href="basket.html"><img src="images/shopping-basket 1.svg" alt=""> <p class="basket__num">1</p></a>
-                                                  
+<body class="chekcout">
+	<header class="container-fluid header__basket">
+    <div class="header__body col-12"> 
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="logo">
+                        <img src="images/dots.svg" alt="logo" class="logo__dots">
+                    </div>
+                </div>
+
+
+                <div class="col-md-10">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="menu__list navbar-nav">
+                            <li class="menu__list-item">
+                                  <a class="homeLink" href="index.html">Home</a>
                             </li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</div>
+                            <li class="menu__list-item">
+                                  <a class="drinksLink" href="#tabs">Drinks</a>
+                            </li>
+                            <li class="menu__list-item">
+                                  <a class="contactLink" href="contact.html">Contact</a>
+                            </li>
+                            <li class="menu__list-item">
+                                  <a class="aboutLink" href="about.html">About</a>
+                            </li>
+                            <li class="menu__list-item pr-lg-10 pl-lg-10">
+                                  <a class="contactLink basket__menu" href="basket.html"><img src="images/shopping-basket 1.svg" alt=""> <p class="basket__num">1</p></a>
+                                                                        
+                            </li>
+                          </ul>
+                        </div>
+                    </nav>
+
+
+
+                </div>
+            </div>
+        </div>
     </header>
 
 <section>
@@ -53,33 +64,33 @@
      	    	    <legend>Please enter your contact details </legend>
      	    	     <div class="content-checkout__form form-checkout">
      	    	      <div class="row row__checkout">
-     	    	      	<div class="col-md-12 p-1">
+     	    	      	<div class="col-md-12">
      		            <label for="fname">Full Name</label>
-   	                    <input type="text" id="fname" name="firstname" placeholder="John M. Doe" class="input_form">
+   	                    <input class="form-control form-control-sm" type="text" id="fname" name="firstname" placeholder="John M. Doe" class="input_form">
    	                    </div>
    	                  </div>
    	                  <div class="row row__checkout"> 
-   	                  	<div class="col-md-12 p-1">
+   	                  	<div class="col-md-12" width="auto">
    	                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                        <input type="email" id="email" name="email" placeholder="john@example.com" class="input_form">
+                        <input class="form-control form-control-sm" type="email" id="email" name="email" placeholder="john@example.com" class="input_form">
                         </div>
                       </div> 
                       <div class="row row__checkout"> 
-                        <div class="col-md-12 p-1">      
+                        <div class="col-md-12">      
                         <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                        <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" class="input_form">
+                        <input class="form-control form-control-sm" type="text" id="adr" name="address" placeholder="542 W. 15th Street" class="input_form">
                         </div> 
                       </div>
                       <div class="row row__checkout"> 
-                        <div class="col-md-12 p-1"> 
+                        <div class="col-md-12"> 
                         <label for="city"><i class="fa fa-institution"></i> City</label>
-                        <input type="text" id="city" name="city" placeholder="New York" class="input_form">
+                        <input class="form-control form-control-sm" type="text" id="city" name="city" placeholder="New York" class="input_form">
                         </div>
                       </div> 
                       <div class="row row__checkout">  
-                        <div class="col-md-12 p-1">
+                        <div class="col-md-12">
                         <label for="tel"><i class="fa fa-institution"></i> Tel</label>
-                        <input type="tel" id="tel" name="phone-number" placeholder="+1 (XXX) XXX-XXXX" class="input_form">  
+                        <input class="form-control form-control-sm" type="tel" id="tel" name="phone-number" placeholder="+1 (XXX) XXX-XXXX" class="input_form">  
                       </div>
                       </div>
 
@@ -95,22 +106,23 @@
 
 
 
+    
     <footer>
-    	<div class="container-fluid">
-    		<div class="row">
-                <div class="col-md-2 foot">
+        <div class="container-fluid">
+            <div class="row d-flex flex-nowrap">
+                <div class="col-md-2 col-xl-1 foot">
                    <div class="footer-menu footer">
                        <ul class="footer-menu__list">
                            <li class="footer-menu__list_item">Enjoy!</li>
-                           <li class="footer-menu__list_item"><a href="index.html">Home</a></li>
-                           <li class="footer-menu__list_item"><a href="index.html#tabs">Drinks</a></li>
+                           <li class="footer-menu__list_item"><a href="#">Home</a></li>
+                           <li class="footer-menu__list_item"><a href="#tabs">Drinks</a></li>
                            <li class="footer-menu__list_item"><a href="about.html">About</a></li>
                            <li class="footer-menu__list_item"><a href="#">Contact</a></li>
                            <li class="footer-menu__list_item"><a href="basket.html">Basket</a></li>
                        </ul>
                    </div>
                 </div> 
-                <div class="col-md-1 foot">
+                <div class="col-md-1 foot foot__footer-name">
                     <div class="socicons-footer footer">
                         <ul class="socicons-footer__links">
                             <li class="socicons-footer__links-item socicons-footer__links-item_fb">
@@ -133,13 +145,13 @@
                     </div>  
                 </div>
                 <div class="col-md-3 foot">
-                                       <!--Google map-->
-                   <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 150px">
-                     <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                     style="border:0" allowfullscreen></iframe>
-                   </div>
+                    <!--Google map-->
+<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 150px">
+  <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+    style="border:0" allowfullscreen></iframe>
+</div>
 
-                                        <!--Google Maps-->
+<!--Google Maps-->
                 </div>
                 <div class="col-md-3">
                     <div class="footer-info footer">
@@ -149,13 +161,15 @@
                     </div>
                 </div>   
             </div>
-    	</div>
+        </div>
     </footer>
 
 
 
-	<script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>	
+
+	  <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="scripts/script.js"></script>
 	
 </body>
 </html>

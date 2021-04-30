@@ -7,82 +7,95 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-<body class="basket">
-	<header class="header__basket">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-1">
-					<div class="logo">
-						<img src="images/dots.svg" alt="logo" class="logo__dots">
-					</div>
-				</div>
-				<div class="col-md-9">
-					<nav class="menu">
-						<ul class="menu__list menu__list_all d-flex">
-							<li class="menu__list-item">
-								<a class="homeLink bm" href="index1.html">Home</a>
-							</li>
-							<li class="menu__list-item">
-								<a class="drinksLink bm" href="index1.html#tabs">Drinks</a>
-							</li>
-							<li class="menu__list-item">
-								<a class="aboutLink bm" href="about.html">About</a>
-							</li>
-							<li class="menu__list-item">
-								<a class="contactLink bm" href="#">Contact</a>
-							</li>
-							<li class="menu__list-item">
-                                <a class="contactLink basket__menu" href="basket.html"><img src="images/shopping-basket 1.svg" alt=""> <p class="basket__num">1</p></a>
-                                                  
+<body class="contact">
+	<header class="container-fluid header__basket">
+        <div class="header__body col-12"> 
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="logo">
+                        <img src="images/dots.svg" alt="logo" class="logo__dots">
+                    </div>
+                </div>
+
+
+                <div class="col-md-10">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="menu__list navbar-nav">
+                            <li class="menu__list-item">
+                                  <a class="homeLink" href="index.html">Home</a>
                             </li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</div>
+                            <li class="menu__list-item">
+                                  <a class="drinksLink" href="#tabs">Drinks</a>
+                            </li>
+                            <li class="menu__list-item">
+                                  <a class="contactLink" href="contact.html">Contact</a>
+                            </li>
+                            <li class="menu__list-item">
+                                  <a class="aboutLink" href="about.html">About</a>
+                            </li>
+                            <li class="menu__list-item pr-lg-10 pl-lg-10">
+                                  <a class="contactLink basket__menu" href="basket.html"><img src="images/shopping-basket 1.svg" alt=""> <p class="basket__num">1</p></a>
+                                                                        
+                            </li>
+                          </ul>
+                        </div>
+                    </nav>
+
+
+
+                </div>
+            </div>
+        </div>
     </header>
 
     <section>
+    	
     	<div class="container">
     		<div class="row">
-                <div class="col-md-12 d-flex justify-content-center">  
-                    <div class="contact__pad">
-    			        <div class="contact__table">
-    				       <p class="contact__post">webup@ukr.net</p>
-                           <p class="contact__tel">+38(098)428-44-83</p> 
-    			        </div>
-    			    </div>  
-    			</div>   
-    		</div>
-    	</div>
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-12 d-flex justify-content-center">
+    			<div class="col-md-12 mx-auto d-flex justify-content-center">
     			    <div class="contact__bunner">
-    				    <img src="images/shutterstock_532002529_2.jpg" alt="">
+    				    <img src="images/shutterstock_532002529_2.jpg" alt="" width="auto">
     			    </div>
     			</div>    
     		</div>
     	</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12  mx-auto my-auto">  
+                    <div class="contact__pad d-md-flex justify-content-center d-sm-block justify-content-sm-center col ml-auto">
+                        
+                           <p class="contact__post">webup@ukr.net</p>
+                           <p class="contact__tel">+38(098)428-44-83</p> 
+                      
+                    </div>  
+                </div>   
+            </div>
+        </div>
     </section>
 
 
+    
     <footer>
-    	<div class="container-fluid">
-    		<div class="row">
-                <div class="col-md-2 foot">
+        <div class="container-fluid">
+            <div class="row d-flex flex-nowrap">
+                <div class="col-md-2 col-xl-1 foot">
                    <div class="footer-menu footer">
                        <ul class="footer-menu__list">
                            <li class="footer-menu__list_item">Enjoy!</li>
-                           <li class="footer-menu__list_item"><a href="index1.html">Home</a></li>
-                           <li class="footer-menu__list_item"><a href="index1.html#tabs">Drinks</a></li>
+                           <li class="footer-menu__list_item"><a href="#">Home</a></li>
+                           <li class="footer-menu__list_item"><a href="#tabs">Drinks</a></li>
                            <li class="footer-menu__list_item"><a href="about.html">About</a></li>
                            <li class="footer-menu__list_item"><a href="#">Contact</a></li>
-                           <li class="footer-menu__list_item"><a href="#">Basket</a></li>
+                           <li class="footer-menu__list_item"><a href="basket.html">Basket</a></li>
                        </ul>
                    </div>
                 </div> 
-                <div class="col-md-1 foot">
+                <div class="col-md-1 foot foot__footer-name">
                     <div class="socicons-footer footer">
                         <ul class="socicons-footer__links">
                             <li class="socicons-footer__links-item socicons-footer__links-item_fb">
@@ -105,13 +118,13 @@
                     </div>  
                 </div>
                 <div class="col-md-3 foot">
-                                       <!--Google map-->
-                   <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 150px">
-                     <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                     style="border:0" allowfullscreen></iframe>
-                   </div>
+                    <!--Google map-->
+<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 150px">
+  <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+    style="border:0" allowfullscreen></iframe>
+</div>
 
-                                        <!--Google Maps-->
+<!--Google Maps-->
                 </div>
                 <div class="col-md-3">
                     <div class="footer-info footer">
@@ -121,13 +134,15 @@
                     </div>
                 </div>   
             </div>
-    	</div>
+        </div>
     </footer>
 
 
 
-	<script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>	
+
+	<script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="scripts/script.js"></script>
 
 	
 </body>

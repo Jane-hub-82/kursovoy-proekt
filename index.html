@@ -8,18 +8,25 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body class="home">
-<div class="container-fluid">
-    <header>
-		    <div class="row">
+    <!--BUTTON UP-->
+
+     <div class="col-md-1 offset-10 col-sm-2">
+           <div id="totop"><img src="images/up-upload.svg" alt=""></div>
+        </div>
+    <!-- end BUTTON UP-->
+
+    <header class="container-fluid">
+		<div class="header__body col-12"> 
+			<div class="row">
 				<div class="col-md-1">
 					<div class="logo">
 						<img src="images/dots.svg" alt="logo" class="logo__dots">
 					</div>
 				</div>
-				<div class="col-md-11">
-              
+
+
+				<div class="col-md-10">
                     <nav class="navbar navbar-expand-lg navbar-light">
-  
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button>
@@ -38,7 +45,7 @@
                             <li class="menu__list-item">
                                   <a class="aboutLink" href="about.html">About</a>
                             </li>
-                            <li class="menu__list-item">
+                            <li class="menu__list-item pr-lg-10 pl-lg-10">
                                   <a class="contactLink basket__menu" href="basket.html"><img src="images/shopping-basket 1.svg" alt=""> <p class="basket__num">1</p></a>
                                                                         
                             </li>
@@ -76,12 +83,12 @@
 					</nav> -->
 				</div>
 			</div>
-        
-         
+        </div>
+           
 			<div class="row">
-				<div class="offset-11 col-md-1">
+				<div class="offset-lg-11 col-lg-1 offset-md-10 offset-10 col-md-1  mr-auto">
 					<div class="socicons">
-						<ul class="socicons__links">
+						<ul class="socicons__links ">
 							<li class="socicons__links-item socicons__links-item_fb">
 							<a href="https://www.facebook.com/watch" target="blank"><img src="images/FB.png" alt="facebook"></a>	
 							</li>
@@ -98,12 +105,12 @@
 		
 	
 			<div class="row">
-				<div class="col-md-6 col-sm-11">
+				<div class="col-lg-6 col-md-10">
 					<div class="search d-flex align-items-md-start flex-column">
 						<h1 class="search__enjoy">
 							Enjoy!
 						</h1>
-						<p class="search__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris arcu aenean in mauris elementum sed non. In sapien enim</p>
+						<p class="search__text col-md-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris arcu aenean in mauris elementum sed non. In sapien enim</p>
 						<form action="#" class="search__form">
 							<input type="text" class="search__input" placeholder="Search your drink">
 							<button type="button" class="search__button">
@@ -114,13 +121,13 @@
 				</div>
 			</div>
 		
-		
-			<div class="row">
-				<div class="col-md-9 col-sm-12 offset-3">
-					<div class="special d-flex justify-content-end">
+	
+			<div class="row row-special">
+				<div class="col-md-9 col-sm-12 offset-lg-3 offset-md-2">
+					<div class="special">
 						<div class="special__green square">
-                            <div class="special__green_content">
-							 <div class="special__green_text">
+                            <div class="special__content special__green_content">
+							 <div class="special__text special__green_text">
 							  <p>Blueberry<br>
                                Special</p>
 							  <p>Calories: 20 kcal<br>
@@ -133,8 +140,8 @@
                             </div>
 			            </div>
 						<div class="special__orange square">
-							<div class="special__orange_content">
-                             <div class="special__orange_text">
+							<div class="special__content special__orange_content">
+                             <div class="special__text special__orange_text">
                               <p>Blueberry<br>
                                Special</p>
                               <p>Calories: 20 kcal<br>
@@ -147,8 +154,8 @@
                             </div>
 						</div>
 						<div class="special__violet square">
-                            <div class="special__violet_content">
-                             <div class="special__violet_text">
+                            <div class="special__content special__violet_content">
+                             <div class="special__text special__violet_text">
                               <p>Blueberry<br>
                                Special</p>
                               <p>Calories: 20 kcal<br>
@@ -163,12 +170,11 @@
 					</div>
 				</div>
 			</div>
-</div>
 		
 	</header>
 	<section id="tabs">
-        <div class="menu">
-         <ul class="nav nav-pills choice__menu mb-3 mb-sm-1" id="pills-tab" role="tablist">
+        <div class="nav__menu">
+         <ul class="nav nav-pills choice__menu" id="pills-tab" role="tablist">
          <li class="nav-item choice__list" role="presentation">
            <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All</a> 
          </li>
@@ -200,8 +206,9 @@
                     <h1 class="name">All</h1>
                 </div>
             </div>
-            <div class="row d-flex  justify-content-center">
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+           <div class="cards">
+            <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-sm-2">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;" id="a1">
                          <button type="button" class="card__body-icon-like"></button>
                          <img src="images/drink1.png" class="card__img" alt="...">
@@ -219,7 +226,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;" id="a2">
                         <button type="button" class="card__body-icon-like">             
                          </button>
@@ -237,7 +244,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                      <div class="card" style="width: 16rem;" id="a3">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/drink3.png" class="card__img" alt="...">
@@ -254,7 +261,7 @@
                          
                     </div>      
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;" id="a4">
                          <button type="button" class="card__body-icon-like"></button>
                          <img src="images/drink4.png" class="card__img" alt="...">
@@ -271,7 +278,7 @@
                         
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;" id="a5">
                          <button type="button" class="card__body-icon-like"></button>
                          <img src="images/drink4.png" class="card__img" alt="...">
@@ -288,7 +295,7 @@
                         
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;" id="a6">
                          <button type="button" class="card__body-icon-like"></button>
                          <img src="images/yohurt1.png"  class="card__img" alt="...">
@@ -305,7 +312,7 @@
                         
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;" id="a7">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/yohurt2.png" class="card__img" alt="...">
@@ -322,7 +329,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;" id="a8">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/yohurt3.png" class="card__img" alt="...">
@@ -339,7 +346,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;" id="a9">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/yohurt4.png" class="card__img" alt="...">
@@ -356,7 +363,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;" id="a10">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/juice4.png" class="card__img" alt="...">
@@ -373,7 +380,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;" id="a11">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/juice2.png" class="card__img" alt="...">
@@ -390,7 +397,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;" id="a12">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/juice3.png" class="card__img" alt="...">
@@ -407,7 +414,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;" id="a13">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/juice1.png" class="card__img" alt="...">
@@ -424,7 +431,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;" id="a14">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/juice2.png" class="card__img" alt="...">
@@ -441,7 +448,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;" id="a15">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/juice4.png" class="card__img" alt="...">
@@ -459,6 +466,7 @@
                     </div>     
                 </div>
             </div>
+           </div> 
         </div>
     </div>
 <!--,конец блок1-->
@@ -474,8 +482,8 @@
                     <h1 class="name">Popular Drinks</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+            <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-sm-2">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/drink1.png" class="card__img" alt="...">
@@ -493,7 +501,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/drink2.png" class="card__img" alt="...">
@@ -510,7 +518,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                      <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/drink3.png" class="card__img" alt="...">
@@ -527,7 +535,7 @@
                          
                     </div>      
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/drink4.png" class="card__img" alt="...">
@@ -544,7 +552,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                          <button type="button" class="card__body-icon-like"></button>
                          <img src="images/drink4.png" class="card__img" alt="...">
@@ -561,7 +569,7 @@
                         
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/yohurt1.png"  class="card__img" alt="...">
@@ -578,7 +586,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/yohurt2.png" class="card__img" alt="...">
@@ -595,7 +603,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                          <button type="button" class="card__body-icon-like"></button>
                          <img src="images/yohurt3.png" class="card__img" alt="...">
@@ -612,7 +620,7 @@
                         
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/yohurt4.png" class="card__img" alt="...">
@@ -629,7 +637,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/juice4.png" class="card__img" alt="...">
@@ -646,7 +654,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/juice2.png" class="card__img" alt="...">
@@ -663,7 +671,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/juice3.png" class="card__img" alt="...">
@@ -680,7 +688,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/juice1.png" class="card__img" alt="...">
@@ -697,7 +705,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                          <button type="button" class="card__body-icon-like"></button>
                          <img src="images/juice2.png" class="card__img" alt="...">
@@ -714,7 +722,7 @@
                         
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/juice4.png" class="card__img" alt="...">
@@ -746,8 +754,8 @@
                     <h1 class="name">Natural Smoothies</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+            <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-sm-2">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/drink1.png" class="card__img" alt="...">
@@ -764,7 +772,7 @@
                                                   
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/drink2.png" class="card__img" alt="...">
@@ -781,7 +789,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                          <button type="button" class="card__body-icon-like"></button>
                         <img src="images/drink3.png" class="card__img" alt="...">
@@ -798,7 +806,7 @@
                         
                     </div>      
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/drink4.png" class="card__img" alt="...">
@@ -815,7 +823,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                          <button type="button" class="card__body-icon-like"></button>
                          <img src="images/drink4.png" class="card__img" alt="...">
@@ -843,13 +851,13 @@
 <!--,блок4-->
     <div class="tab-pane fade" id="pills-juice" role="tabpanel" aria-labelledby="pills-juice-tab">
         <div class="container">
-            <div class="row">
+            <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-sm-2">
                 <div class="col-md-1 pl-0">
                     <h1 class="name">Juices</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                          <button type="button" class="card__body-icon-like"></button>
                          <img src="images/juice4.png" class="card__img" alt="...">
@@ -866,7 +874,7 @@
                         
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                          <button type="button" class="card__body-icon-like"></button>
                          <img src="images/juice2.png" class="card__img" alt="...">
@@ -883,7 +891,7 @@
                         
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                          <button type="button" class="card__body-icon-like"></button>
                          <img src="images/juice3.png" class="card__img" alt="...">
@@ -900,7 +908,7 @@
                         
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/juice1.png" class="card__img" alt="...">
@@ -917,7 +925,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/juice2.png" class="card__img" alt="...">
@@ -934,7 +942,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/juice4.png" class="card__img" alt="...">
@@ -966,8 +974,8 @@
                     <h1 class="name">Yogurt</h1>
                 </div>
             </div>
-            <div class="row">
-                 <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+            <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-sm-2">
+                 <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/yohurt1.png"  class="card__img" alt="...">
@@ -984,7 +992,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/yohurt2.png" class="card__img" alt="...">
@@ -1001,7 +1009,7 @@
                          
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                          <button type="button" class="card__body-icon-like"></button>
                          <img src="images/yohurt3.png" class="card__img" alt="...">
@@ -1018,7 +1026,7 @@
                         
                     </div>     
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-md-3 p-1">
+                <div class="col-auto mx-auto">
                     <div class="card" style="width: 16rem;">
                         <button type="button" class="card__body-icon-like"></button>
                          <img src="images/yohurt4.png" class="card__img" alt="...">
@@ -1046,8 +1054,8 @@
 
     <footer>
     	<div class="container-fluid">
-    		<div class="row">
-                <div class="col-md-2 foot">
+    		<div class="row d-flex flex-nowrap">
+                <div class="col-md-2 col-xl-1 foot">
                    <div class="footer-menu footer">
                        <ul class="footer-menu__list">
                            <li class="footer-menu__list_item">Enjoy!</li>
@@ -1059,7 +1067,7 @@
                        </ul>
                    </div>
                 </div> 
-                <div class="col-md-1 foot">
+                <div class="col-md-1 foot foot__footer-name">
                     <div class="socicons-footer footer">
                         <ul class="socicons-footer__links">
                             <li class="socicons-footer__links-item socicons-footer__links-item_fb">
@@ -1102,13 +1110,7 @@
     </footer>
 
 
-    <div class="container-fluid">
-     <div class="row">
-        <div class="col-md-1 offset-10 col-sm-2">
-           <div id="totop"><img src="images/up-upload.svg" alt=""></div>
-        </div>
-     </div> 
-    </div>
+       
 
 
 
@@ -1116,4 +1118,5 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
+ 
 </html>
