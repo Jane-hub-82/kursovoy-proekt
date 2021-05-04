@@ -64,6 +64,16 @@ body {
 	color: #C8C8C8;
 	background-color: #f2edfe;
 	}
+#totop {
+width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 10px;
+	bottom: 30px;
+	display: none;
+	z-index: 1000;
+	
+}				
 input[type=number]{
     width: 80px;
 } 
@@ -84,15 +94,7 @@ input::-webkit-input-placeholder {
 					input:-ms-input-placeholder {  
 					color: rgba(97, 41, 153, 0.5) !important;  
 					}	
-#totop {
-width: 50px;
-	height: 50px;
-	position: fixed;
-	right: 10px;
-	bottom: 30px;
-	display: none;
-	z-index: 1000;
-}					
+
 
 header {
 	background-image: url("../images/header main.png");
@@ -516,6 +518,7 @@ a.basket__menu {
 	padding-top: 0.1rem;
 	bottom: -2px;
 	right: -8px;
+	color: #fff;
  }
  .basket__num:hover {
  	background-color: #fff;
