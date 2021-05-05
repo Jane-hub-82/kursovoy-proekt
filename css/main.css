@@ -63,6 +63,7 @@ body {
 	font-weight: normal;
 	color: #C8C8C8;
 	background-color: #f2edfe;
+	overflow-x: hidden; 
 	}
 #totop {
 width: 50px;
@@ -101,7 +102,7 @@ header {
  	background-size: cover;
  	width: 100%;
     color: #fff;
-   min-height: 750px ;
+    min-height: 750px ;
     position: relative;
    }
 
@@ -440,7 +441,7 @@ footer {
 .socicons-footer {
 	padding-left: auto;
 }
-.socicons-footer__links-item {
+.socicons-footer__links {
 	list-style: none;
 } 
 .socicons-footer__links-item_fb, .socicons-footer__links-item_tw {
