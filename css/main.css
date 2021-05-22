@@ -329,7 +329,7 @@ li.choice__list a:hover {
    	align-content: center;
    }
 img.card__img {
-	height: 100%;
+	width: 100%;
 }
 .card__body-icon-like {
 	position: absolute;
