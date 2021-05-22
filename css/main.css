@@ -32,39 +32,17 @@ table {
 	border-spacing: 0;
 } 
 /* кінець кода сброса стилів браузера */
-/*подключение шрифта*/
-@font-face {
-	font-family: 'Poppins';
-	src: url('../../fonts/Poppins-Bold.eot');
-	src: local('☺'), url('../../fonts/Poppins-Bold.woff') format('woff'), url('../../fonts/Poppins-Bold.ttf') format('truetype'), url('../../fonts/Poppins-Bold.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
 
-@font-face {
-	font-family: 'Poppins';
-	src: url('../../fonts/Poppins-Medium.eot');
-	src: local('☺'), url('../fonts/Poppins-Medium.woff') format('woff'), url('../fonts/Poppins-Medium.ttf') format('truetype'), url('../fonts/Poppins-Medium.svg') format('svg');
-	font-weight: 500;
-	font-style: normal;
+html {
+	overflow-x: hidden;
 }
-
-@font-face {
-	font-family: 'Poppins';
-	src: url('../../fonts/Poppins-Regular.eot');
-	src: local('☺'), url('../fonts/Poppins-Regular.woff') format('woff'), url('../fonts/Poppins-Regular.ttf') format('truetype'), url('../fonts/Poppins-Regular.svg') format('svg');
-	font-weight: 700;
-	font-style: normal;
-}
-/*Конец подключения шрифтов*/
-
 
 body {
-	font-family: 'Poppins', Arial, sans-serif;
+	font-family: 'Poppins', sans-serif, Arial, sans-serif;
 	font-weight: normal;
 	color: #C8C8C8;
 	background-color: #f2edfe;
-	overflow-x: hidden; 
+	overflow-x: hidden !important; 
 	}
 #totop {
 width: 50px;
@@ -186,7 +164,6 @@ li a:hover {
 	width: 370px;
 	height: 55px;
     background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(20px);
     border: none;
     border-radius: 46.5px;
     text-align: center;
@@ -244,8 +221,7 @@ li a:hover {
 .special__green_price p:last-child {
 	 align-self: flex-end;
 	 font-size: 2.0rem;
-	 padding-top: 10px 0 10px;
-	 margin-top: 13px;
+	 padding: 10px 0 10px;
 }
 .special__orange{
     background: rgba(251, 196, 0, 0.5);	
@@ -274,8 +250,7 @@ li a:hover {
 .special__orange_price p:last-child {
 	 align-self: flex-end;
 	 font-size: 2.0rem;
-	 padding-top: 10px 0 10px;
-	 margin-top: 13px;
+	 padding: 10px 0 10px;
 }
 .special__violet {
     background: rgba(97, 41, 153, 0.5) ;	
@@ -303,8 +278,7 @@ li a:hover {
 .special__violet_price p:last-child {
 	 align-self: flex-end;
 	 font-size: 2.0rem;
-	 padding-top: 10px 0 10px;
-	 margin-top: 13px;
+	 padding: 10px 0 10px;
 }
 .nav__menu {
      display: flex;
@@ -424,10 +398,6 @@ footer {
 	font-weight: 400;
 	letter-spacing: 0.2rem;
 	line-height: 1.8rem;
-    padding-left: auto;
-}
-.footer-menu__list li {
-	padding-left: 0.5rem;
 }
 .footer-menu__list li:first-child {
 	font-size: 1.2rem;
@@ -439,9 +409,6 @@ footer {
     border-radius: 6px;
     width: 5rem;
 }
-.socicons-footer {
-	padding-left: auto;
-}
 .socicons-footer__links {
 	list-style: none;
 } 
@@ -449,8 +416,7 @@ footer {
 	padding-bottom: 3rem;
 }
 .footer-name {
-    padding-left: auto;
-    padding-top: 2rem;
+   padding-top: 2rem;
 }
 .footer-name__text h1 {
    background: #fff;
@@ -469,7 +435,6 @@ footer {
     color: #fff;
     font-weight: normal;
     letter-spacing: 0.2rem;
-    padding-left: auto;
     padding-right: 15px;
  }
 .footer {
@@ -491,7 +456,6 @@ p.cop {
     height: 100%;
 }
 .map-container iframe{
-    padding-left:auto;
     top:0;
     height:100%;
     width:100%;
@@ -762,9 +726,7 @@ p.contact__tel::before {
 }
 }
 @media (max-width: 768px) {
-	.socicons {
-	}
-	.menu {
+.menu {
 	 padding-left: 0;
 	 margin-left: 0;
 }
@@ -775,18 +737,18 @@ p.contact__tel::before {
 	font-weight: 700;
 	line-height: 35px;
 }
-   .special {
+.special {
    	display: block!important;
 }
-   .choice__menu {
+.choice__menu {
    display: block;
    padding-top: 15px;
 }
-   .nav__menu {
+.nav__menu {
    justify-content: flex-start;
    padding-left: 60px;
 }
-   .choice__list {
+.choice__list {
 	margin-right: 15px;
 	font-size: 25px;
 	line-height: 30px;
@@ -794,80 +756,116 @@ p.contact__tel::before {
 	padding: 0;
 	margin: 0;
 }
-   .footer-name {
+.card__body-icon-like {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card__body-icon-like::before {
+	width: 30px;
+	height: 30px;
+}
+.card__body-icon-like--active::before {
+	width: 25px;
+	height: 25px;
+}
+.card__body-name {
+	font-size: 1em;
+}
+.card__body-text {
+	font-size: 0.8em;
+}
+.card__body-price {
+	font-size: 1.4em;
+	font-weight: 700;
+}
+.card__body-icon-basket {
+	
+	width: 30px;
+	height: 30px;
+	margin-bottom: 8px;
+}
+.card__body-icon-basket img {
+	width: 20px;
+
+}
+.footer-name {
    	display: none;
    }
-   p.cop {
+p.cop {
 	padding-top: 4rem;
 	font-size: 0.5rem;
 }
-   .footer {
+.footer {
 	height: auto;
 }
-   #map-container-google-1 {
+#map-container-google-1 {
    	display: none;
 }
-   .footer-menu__list li {
+.footer-menu__list li {
 	padding-left: 0;
 	font-size: 0.8rem;
 	line-height: 1.4rem;
 }
-   .socicons-footer__links-item img {
+.socicons-footer__links-item img {
    	width: 20px;
-   }
-   .socicons-footer__links {
+}
+.socicons-footer__links {
       	margin-left:  -30px;	
 }
-   .socicons-footer__links-item_fb, .socicons-footer__links-item_tw {
+.socicons-footer__links-item_fb, .socicons-footer__links-item_tw {
 	padding-bottom: 2rem;
 	padding-top: 8px;
 }
-   footer {
-	
+footer {
 	padding: 20px 5px 15px 0;
-
 }
-   .product-name p {
+.product-name p {
    	display: none;
 }
-   .product-name h3 {
+.product-name h3 {
    	font-size: 0.5rem;
-   }
-   .product-img img {
+}
+.product-img img {
    	width: 30px;
 }
-   .product-price, .product-sum, .sum_total {
-   font-size: 0.7rem; 
+.product-price, .product-sum, .sum_total {
+    font-size: 0.7rem; 
 }
-   input[type=number]{
+input[type=number]{
     width: 43px;
     font-size: 0.8rem;
     margin-left: -5px;
 } 
-   .table__head {
+.table__head {
    	font-size: 0.9rem;
 }
-   .about_icon-img img {
+.about_icon-img img {
    	width: 3rem;
    }
- .about__title {
+.about__title {
 	font-size: 3rem;
 }
- .whyus span {
+.whyus span {
   	font-size: 1.4rem;
 }  
-   .contact__bunner {
+.contact__bunner {
  max-width: 400px;
-   }
-   .contact__bunner img {
+}
+.contact__bunner img {
    max-width: 400px;
-   } 
-   .contact__pad {
+} 
+.contact__pad {
    	font-size: 1rem;
-   }
+}
+.footer-info {
+	margin-left: -80px;
+}
 }
 @media (max-width: 575px) {
-	.socicons {
+.socicons {
 		display: none;
 }
 	.search {
@@ -935,7 +933,8 @@ p.contact__tel::before {
 	height: 35px;
 }
    .footer-info {
-   	margin-left:  -70px;
+   	margin-left:  -65px;
+   	margin-right: 15px;
    	font-size: 0.8rem;
 }
 }
