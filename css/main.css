@@ -330,7 +330,7 @@ li.choice__list a:hover {
    }
 .card__body-icon-like {
 	position: absolute;
-	top: 5px;
+	top: 15px;
 	right: 20px;
 	border: none;
 	width: 47px;
@@ -377,12 +377,9 @@ padding-right: 15px;
 	width: 63px;
 	height: 63px;
 	border-radius: 50%;
+	display: block;
 	margin-bottom: 15px;
-}
-button.card__body-icon-like {
-	position: absolute;
-	margin-left: 190px;
-    margin-top: 15px;
+	margin-top: 15px;
 }
 footer {
 	background-color: mediumpurple;
@@ -759,17 +756,18 @@ p.contact__tel::before {
 .card__body-icon-like {
 	width: 40px;
 	height: 40px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 .card__body-icon-like::before {
 	width: 30px;
 	height: 30px;
+	top: 12px;
+	right: 5px;
 }
 .card__body-icon-like--active::before {
 	width: 25px;
 	height: 25px;
+	top: 11px;
+	right: 7px;
 }
 .card__body-name {
 	font-size: 1em;
@@ -782,10 +780,10 @@ p.contact__tel::before {
 	font-weight: 700;
 }
 .card__body-icon-basket {
-	
-	width: 30px;
-	height: 30px;
-	margin-bottom: 8px;
+	width: 50px;
+	height: 50px;
+	margin-bottom: 15px;
+	margin-left: 8px;
 }
 .card__body-icon-basket img {
 	width: 20px;
@@ -935,7 +933,7 @@ input[type=number]{
    .footer-info {
    	margin-left:  -65px;
    	margin-right: 15px;
-   	font-size: 0.8rem;
+   	font-size: 0.6rem;
 }
 }
 @media (max-width:355px) {
