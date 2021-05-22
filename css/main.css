@@ -632,14 +632,26 @@ legend {
    .contact__pad p {
    	padding-top: 5px;
    }
+p.contact__post {
+	position: relative;
+	padding-left: 40px;
+	margin-right: 25px;
+}
 p.contact__post::before {
-	content: url(../images/free-icon-phone-call-126509.png);
-	padding: 10px;
+	content: url(../images/free-icon-email-561127.png);
+	position: absolute;
+  top: 10px;
+	left:0;
+}
+p.contact__tel {
+	position: relative;
+	padding-left: 35px;
 }
 p.contact__tel::before {
-    content: url(../images/free-icon-email-561127.png);
-    padding: 10px;
-    top: 5px;
+    content: url(../images/free-icon-phone-call-126509.png);
+    position: absolute;
+	  top: 13px;
+	  left:0;
 }
 @media (max-width: 1273px) {
     .menu {
