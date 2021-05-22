@@ -328,6 +328,9 @@ li.choice__list a:hover {
    .cards {
    	align-content: center;
    }
+img.card__img {
+	height: 100%;
+}
 .card__body-icon-like {
 	position: absolute;
 	top: 15px;
@@ -942,8 +945,8 @@ input[type=number]{
 	width: 35px;
 	height: 35px;
 }
-	.card .card__img {
-		width: auto;
+	.card {
+		 overflow-x: hidden;
 	}
    .footer-info {
    	margin-left:  -65px;
