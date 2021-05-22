@@ -329,8 +329,8 @@ li.choice__list a:hover {
    	align-content: center;
    }
 img.card__img {
-	
- object-fit: contain;
+ width: 100%; 
+ object-fit: cover;
 }
 .card__body-icon-like {
 	position: absolute;
